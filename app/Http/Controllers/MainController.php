@@ -10,7 +10,8 @@ class MainController extends Controller
 {
     public function home(){
        $category = Category::where('id', 2)->firstOrfail();
-       dd($category->courses);
-        return view('main.home');
+        return view('main.home', [
+            'category' => $category
+        ]);
     }
 }

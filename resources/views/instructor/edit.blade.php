@@ -6,30 +6,34 @@
     <div class="container">
         <div class="d-flex justify-content-center">
             <div class="col-lg-8">
-                <form action="#" class="comment-form contact-form" method="POST" enctype="multipart/form-data">
+                <form action="{{ route('instructor.update', $course->id) }}" class="comment-form contact-form" method="POST" enctype="multipart/form-data">
+                    @csrf
+                    @method("PUT")
                     <div class="row">
                         <div class="col-lg-12">
                             <label for="title">Titre du cours</label>
-                            <input type="text" placeholder="Name" name="title" value="Titre du cours">
+                            <input type="text" placeholder="Name" name="title" value="{{ $course->title }}">
                         </div>
                         <div class="col-lg-12">
                             <label for="subtitle">Sous-titre du cours</label>
-                            <input type="text" placeholder="Email" name="subtitle" value="Sous-tite du cours">
+                            <input type="text" placeholder="Email" name="subtitle" value="{{ $course->subtitle }}">
                         </div>
                         <div class="col-lg-12">
                             <label for="description">Description du cours</label>
-                            <textarea type="textarea" placeholder="Phone" name="description">Description du cours</textarea>
+                            <textarea type="textarea" placeholder="Phone" name="{{ $course->description }}">Description du cours</textarea>
                         </div>
                         <div class="col-lg-12">
                             <select class="form-control" name="category">
-                                <option value="cat">Catégorie</option>
+                                @foreach($categories as $category)
+                                    <option value="{{ $category->id }}" {{ $course->category_id == $category->id ? 'selected' : ''}}>{{ $category->name }}</option>
+                                @endforeach
                             </select>
                         </div>
                         <div class="col-lg-12 mt-5">
                             <label for="image">Image du cours</label>
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <img src="https://blog.hyperiondev.com/wp-content/uploads/2019/02/Blog-Types-of-Web-Dev.jpg"/>
+                                    <img src="/storage/courses/{{\Illuminate\Support\Facades\Auth::user()->id}}/{{ $course->image }}"/>
                                 </div>
                                 <div class="col-lg-6">
                                     <input type="file" name="image"/>
@@ -43,7 +47,6 @@
                             </button>
                             </div>
                         </div>
-                    </div>
                 </form>
             </div>
         </div>

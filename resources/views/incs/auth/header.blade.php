@@ -1,7 +1,7 @@
 <nav class="mainmenu mobile-menu">
     <ul>
         <li class="active">
-            <a href="#">
+            <a href="{{route('main.home')}}">
                 <i class="fas fa-home"></i>
                 Accueil
             </a>

@@ -1,10 +1,10 @@
 <header class="header-section">
-    <div class="container-fluid">
+    <div class="container">
         <div class="nav-menu">
             <nav class="mainmenu mobile-menu">
                 <ul>
                     <li class="active">
-                        <a href="#">
+                        <a href="{{route('main.home')}}">
                             <i class="fas fa-home"></i>
                             Accueil
                         </a>
@@ -21,14 +21,14 @@
                     <li>
                     <li>
                         <a class="nav-link" href="#">
-                        <img class="w-25 border-rounded rounded-circle" src="https://blog.hyperiondev.com/wp-content/uploads/2019/02/Blog-Types-of-Web-Dev.jpg"/>
+                        <img class="border-rounded rounded-circle" src="https://blog.hyperiondev.com/wp-content/uploads/2019/02/Blog-Types-of-Web-Dev.jpg" height="40px" width="45px"/>
                          </a>
                              <ul class="dropdown">
                                  <li>
                                      <div class="d-flex justify-content-between py-3 px-3">
                                          <div class="user-infos">
-                                             <p>Utilisateur</p>
-                                             <small>utilisateur@email.com</small>
+                                             <p>{{ \Illuminate\Support\Facades\Auth::user()->name }}</p>
+                                             <small>{{\Illuminate\Support\Facades\Auth::user()->name}}</small>
                                          </div>
                                      </div>
                                  </li>

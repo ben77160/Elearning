@@ -2,15 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2bb35cd-d3df-4426-9ea3-a9ddbd59b8e8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Elearning.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Elearning.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/incs/message.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Course.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Course.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_18_115957_create_courses_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_18_115957_create_courses_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/CoursesSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/CoursesSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/incs/auth/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/incs/auth/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/incs/instructor/course-sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/incs/instructor/course-sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/incs/instructor/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/incs/instructor/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/instructor/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/instructor/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/instructor/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/instructor/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/instructor/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/instructor/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -165,7 +171,7 @@
       <option name="presentableId" value="Default" />
       <updated>1597743797984</updated>
       <workItem from="1597743802036" duration="1756000" />
-      <workItem from="1597746834533" duration="12473000" />
+      <workItem from="1597746834533" duration="30238000" />
     </task>
     <servers />
   </component>

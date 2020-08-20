@@ -6,7 +6,8 @@
     <div class="container">
         <div class="d-flex justify-content-center">
             <div class="col-lg-8">
-                <form action="#" class="comment-form contact-form" method="POST" enctype="multipart/form-data">
+                <form action="{{ route('instructor.store') }}" class="comment-form contact-form" method="POST" enctype="multipart/form-data">
+                    @csrf
                     <div class="row">
                         <div class="col-lg-12">
                             <label for="title">Titre du cours</label>
@@ -22,7 +23,9 @@
                         </div>
                         <div class="col-lg-12">
                             <select class="form-control" name="category">
-                                <option value="cat">Catégorie</option>
+                                @foreach($categories as $category)
+                                    <option value="{{ $category->id }}">{{ $category->name }}</option>
+                                @endforeach
                             </select>
                         </div>
                         <div class="col-lg-12 mt-3">
