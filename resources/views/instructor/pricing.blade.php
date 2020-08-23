@@ -7,8 +7,8 @@
         <div class="d-flex justify-content-center">
             <div class="col-lg-8">
                 <h3>Tarification</h3>
-                <form action="#" class="comment-form contact-form" method="POST" enctype="multipart/form-data">
-                    @csrf 
+                <form action="{{ route('pricing.store', $course->id) }}" class="comment-form contact-form" method="POST" enctype="multipart/form-data">
+                    @csrf
                     <div class="content">
                         <p>Tarif du cours</p>
                         <p>Choisissez un niveau de tarif pour votre cours ci-dessous et cliquez sur « Enregistrer ». Le prix affiché visible par les participants dans d'autres devises est calculé à l'aide d'une grille tarifaire en fonction du tarif auquel celui-ci correspond.</p>
@@ -16,10 +16,10 @@
                     </div>
                     <div class="col-lg-12">
                         <select class="form-control" name="price">
-                            <option value="19.99">19,99 €</option>
-                            <option value="29.99">29,99 €</option>
-                            <option value="39.99">39,99 €</option>
-                            <option value="49.99">49,99 €</option>
+                            <option value="19.99" {{$course->price === 19.99 ? 'selected' : ''}}>19,99 €</option>
+                            <option value="29.99" {{$course->price === 29.99 ? 'selected' : ''}}>29,99 €</option>
+                            <option value="39.99" {{$course->price === 39.99 ? 'selected' : ''}}>39,99 €</option>
+                            <option value="49.99" {{$course->price === 49.99 ? 'selected' : ''}}>49,99 €</option>
                         </select>
                     </div>
                     <div class="col-lg-12 mt-5">

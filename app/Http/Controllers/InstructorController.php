@@ -63,7 +63,9 @@ class InstructorController extends Controller
     }
 
     /**
-     * @param $id
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
      * @return Factory|\Illuminate\View\View
      */
     public function edit($id)
@@ -103,5 +105,16 @@ class InstructorController extends Controller
         }
         $course->save();
         return redirect()->route('instructor.index')->with('success', 'Vos modifications ont été apportées avec succès');
+    }
+
+    /**
+     * @param $id
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function destroy($id)
+    {
+        $course = Course::find($id);
+        $course->delete();
+        return redirect()->route('instructor.index')->with('success', 'Le cours a bien été supprimé !');
     }
 }

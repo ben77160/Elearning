@@ -2,21 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2bb35cd-d3df-4426-9ea3-a9ddbd59b8e8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/incs/message.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Course.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Course.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_18_115957_create_courses_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_18_115957_create_courses_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/CoursesSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/CoursesSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/incs/auth/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/incs/auth/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/InstructorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/InstructorController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/incs/instructor/course-sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/incs/instructor/course-sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/incs/instructor/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/incs/instructor/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/instructor/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/instructor/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/instructor/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/instructor/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/instructor/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/instructor/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/instructor/pricing.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/instructor/pricing.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/instructor-app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/instructor-app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -145,7 +137,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Mon Portfolio/PHP-PROJECT/MonBlog" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -172,6 +164,8 @@
       <updated>1597743797984</updated>
       <workItem from="1597743802036" duration="1756000" />
       <workItem from="1597746834533" duration="30238000" />
+      <workItem from="1598017080399" duration="591000" />
+      <workItem from="1598107634310" duration="8922000" />
     </task>
     <servers />
   </component>
@@ -179,9 +173,13 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="798" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1597746838082">
+    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1598190109531">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="798" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1597746838082" />
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1598190109531" />
+    <state x="798" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1598107715120">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="798" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1598107715120" />
   </component>
 </project>

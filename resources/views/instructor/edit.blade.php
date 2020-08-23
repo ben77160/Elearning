@@ -20,7 +20,7 @@
                         </div>
                         <div class="col-lg-12">
                             <label for="description">Description du cours</label>
-                            <textarea type="textarea" placeholder="Phone" name="{{ $course->description }}">Description du cours</textarea>
+                            <textarea type="textarea" placeholder="Phone" name="descruption" value="{{ $course->description }}">Description du cours</textarea>
                         </div>
                         <div class="col-lg-12">
                             <select class="form-control" name="category">
