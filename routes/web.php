@@ -36,3 +36,5 @@ Route::get('/instructor/courses/{id}/destroy', 'InstructorController@destroy')->
 Route::get('/instructor/courses/{id}/pricing', 'PricingController@pricing')->name('pricing.index');
 Route::post('/instructor/courses/{id}/pricing/store', 'PricingController@store')->name('pricing.store');
 
+Route::get('/instructor/courses/{id}/curriculum', 'CurriculumController@index')->name('instructor.curriculum.index');
+

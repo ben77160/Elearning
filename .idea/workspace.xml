@@ -3,12 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="c2bb35cd-d3df-4426-9ea3-a9ddbd59b8e8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/InstructorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/InstructorController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Course.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Course.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/incs/instructor/course-sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/incs/instructor/course-sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/instructor/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/instructor/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/instructor/pricing.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/instructor/pricing.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/instructor-app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/instructor-app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/instructor/curriculum/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/instructor/curriculum/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -165,7 +162,7 @@
       <workItem from="1597743802036" duration="1756000" />
       <workItem from="1597746834533" duration="30238000" />
       <workItem from="1598017080399" duration="591000" />
-      <workItem from="1598107634310" duration="8922000" />
+      <workItem from="1598107634310" duration="14273000" />
     </task>
     <servers />
   </component>
@@ -181,5 +178,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="798" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1598107715120" />
+    <state x="784" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1598286616912">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="784" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1598286616912" />
   </component>
 </project>

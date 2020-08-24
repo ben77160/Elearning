@@ -17,18 +17,19 @@
                 <div class="schedule-tab">
                     <div class="tab-content">
                         <div class="tab-pane active" id="tabs-1" role="tabpanel">
-                            <div class="text-center mb-5">
-                                <a class="primary-btn" href="#">
-                                    <i class="fas fa-plus mr-2"></i>
-                                    Ajouter une section
-                                </a>
-                            </div>
+                            @if(count($course->sections) > 0)
+                                <div class="text-center mb-5">
+                                    <a class="primary-btn" href="#">
+                                        <i class="fas fa-plus mr-2"></i>
+                                        Ajouter une section
+                                    </a>
+                                </div>
                                 <div class="st-content">
                                     <div class="container">
                                         <div class="row">
                                             <div class="col-lg-4 px3 py-3">
                                                 <iframe width="320" height="180"
-                                                    src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                                                        src="https://www.youtube.com/embed/tgbNymZ7vqY">
                                                 </iframe>
                                             </div>
                                             <div class="col-lg-4 text-left">
@@ -52,6 +53,11 @@
                                         </div>
                                     </div>
                                 </div>
+                            @else
+                            <div class="text-center">
+                               <a href="#" class="primary-btn"><i class="fa fa-plus"></i>Ajouter ma première section</a>
+                            </div>
+                            @endif
                         </div>
                     </div>
                 </div>

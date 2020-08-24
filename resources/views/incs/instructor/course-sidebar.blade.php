@@ -5,7 +5,7 @@
         <h4 class="btn text-white pl-0">Modification du cours</h4>
         <ul class="list-unstyled components mb-5">
             <li>
-                <a href="#">Programme</a>
+                <a href="{{ route('instructor.curriculum.index', $course->id) }}">Programme</a>
             </li>
             <li>
                 <a href="#">Page d'accueil du cours</a>
