@@ -101,7 +101,7 @@ class InstructorController extends Controller
             $extension = $image->getClientOriginalExtension();
             $file = time() . '_' .$imageName . '.' . $extension;
             $image->storeAs('public/courses/'. Auth::user()->id, $file);
-            $course->image;
+            $course->image = $file;
         }
         $course->save();
         return redirect()->route('instructor.index')->with('success', 'Vos modifications ont été apportées avec succès');

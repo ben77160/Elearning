@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Course;
+use App\Http\Manager\VideoManager;
 use App\Section;
 use Cocur\Slugify\Slugify;
 use Illuminate\Http\Request;
@@ -10,6 +11,16 @@ use Illuminate\Support\Facades\Auth;
 
 class CurriculumController extends Controller
 {
+    /**
+     * @var VideoManager
+     */
+    private $videoManager;
+
+    public function __construct(VideoManager $videoManager)
+    {
+        $this->videoManager = $videoManager;
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -39,20 +50,12 @@ class CurriculumController extends Controller
 
         $section->name = $request->input('section_name');
         $section->slug = $slugify->slugify($section->name);
-        $video = $request->file('section_video');
-        $fileFullname = $video->getClientOriginalName();
-        $filename = pathinfo($fileFullname, PATHINFO_FILENAME);
-        $extension = $video->getClientOriginalExtension();
-        $file = time() . '_' . $filename . '_'. $extension;
-        $video->storeAs('public/courses_sections/' . Auth::user()->id, $file);
+        $video = $this->videoManager->videoStorage($request->file('section_video'));
 
-        $section->video = $file;
+        $section->video = $video;
         $section->course_id = $id;
 
-        $getID3 = new \getID3();
-        $pathVideo = 'storage/courses_sections/'. Auth::user()->id. '/' .$file;
-        $fileAnalyze = $getID3->analyze($pathVideo);
-        $playtime = $fileAnalyze('playtime_string');
+       $playtime = $this->videoManager->getVideoDuration($video);
         $section->playtime_seconds = $playtime;
 
         $section->save();
