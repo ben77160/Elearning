@@ -7,7 +7,8 @@
         <div class="d-flex justify-content-center">
             <div class="col-lg-10 pl-5 ml-5">
                 <h3 class="text-center mb-5">Programme</h3>
-                <form id="form" action="#" method="POST" enctype="multipart/form-data">
+                <form id="form" action="{{route('instructor.curriculum.store', $course->id)}}" method="POST" enctype="multipart/form-data">
+                    @csrf
                     <div id="form-element" class="form-group">
                         <div class="jumbotron py-3">
                             <h4 class="my-3">Contenu de la section :</h4>
