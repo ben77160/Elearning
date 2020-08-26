@@ -48,5 +48,14 @@ class CurriculumController extends Controller
 
         $section->video = $file;
         $section->course_id = $id;
+
+        $getID3 = new \getID3();
+        $pathVideo = 'storage/courses_sections/'. Auth::user()->id. '/' .$file;
+        $fileAnalyze = $getID3->analyze($pathVideo);
+        $playtime = $fileAnalyze('playtime_string');
+        $section->playtime_seconds = $playtime;
+
+        $section->save();
+        return redirect()->route('instructor.curriculum.index', $course->id);
     }
 }

@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2bb35cd-d3df-4426-9ea3-a9ddbd59b8e8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Elearning.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Elearning.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CurriculumController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CurriculumController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/instructor/curriculum/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/instructor/curriculum/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/instructor/curriculum/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/instructor/curriculum/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,6 +122,7 @@
       <path value="$PROJECT_DIR$/vendor/asm89/stack-cors" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
       <path value="$PROJECT_DIR$/vendor/cocur/slugify" />
+      <path value="$PROJECT_DIR$/vendor/james-heinrich/getid3" />
     </include_path>
   </component>
   <component name="ProjectId" id="1gGbIbO73LdcaduuhwYdjj0FzhZ" />
@@ -164,7 +166,7 @@
       <workItem from="1598017080399" duration="591000" />
       <workItem from="1598107634310" duration="15443000" />
       <workItem from="1598357743023" duration="2503000" />
-      <workItem from="1598449640456" duration="3167000" />
+      <workItem from="1598449640456" duration="4381000" />
     </task>
     <servers />
   </component>
