@@ -94,6 +94,7 @@ class InstructorController extends Controller
         $course->description = $request->input('description');
         $course->category_id = $request->input('category');
 
+        //On recupère notre fichier d'image
         if($request->file('image')){
             $image = $request->file('image');
             $imageFullName = $image->getClientOriginalName();
@@ -116,5 +117,18 @@ class InstructorController extends Controller
         $course = Course::find($id);
         $course->delete();
         return redirect()->route('instructor.index')->with('success', 'Le cours a bien été supprimé !');
+    }
+    
+    //On publie notre cours en ligne
+    public function publish($id)
+    {
+        $course = Course::find($id);
+
+        if($course->price && count($course->sections) > 0){
+            $course->is_published = true;
+            $course->save();
+            return redirect()->back()->with('success', 'Votre cours est maintenant en ligne');
+        }
+        return redirect()->back()->with('danger', 'Votre cours doit avoir un tarif de défini, ainsi qu\'au moins une section vidéo avant d\'être publiable.');
     }
 }

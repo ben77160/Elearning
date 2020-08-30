@@ -22,6 +22,7 @@ class CreateCoursesTable extends Migration
             $table->float('price')->nullable();
             $table->integer('category_id');
             $table->integer('user_id');
+            $table->boolean('is_published')->default(false);
             $table->string('image');
             $table->timestamps();
         });
