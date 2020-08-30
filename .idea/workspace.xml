@@ -4,7 +4,6 @@
     <list default="true" id="c2bb35cd-d3df-4426-9ea3-a9ddbd59b8e8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CurriculumController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CurriculumController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/instructor/curriculum/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/instructor/curriculum/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/instructor/curriculum/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/instructor/curriculum/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -168,7 +167,7 @@
       <workItem from="1598449640456" duration="13476000" />
       <workItem from="1598521469714" duration="4056000" />
       <workItem from="1598634490647" duration="98000" />
-      <workItem from="1598798224658" duration="3636000" />
+      <workItem from="1598798224658" duration="4191000" />
     </task>
     <servers />
   </component>

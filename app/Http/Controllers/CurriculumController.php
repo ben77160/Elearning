@@ -93,4 +93,11 @@ class CurriculumController extends Controller
         return redirect()->route('instructor.curriculum.index', $course->id)->with('success', 'La section a bien été modifiée');
     }
 
+    public function destroy($id, $sectionId)
+    {
+        $course = Course::find($id);
+        $section = Section::find($sectionId);
+        $section->delete();
+        return redirect()->route('instructor.curriculum.index', $course->id)->with('success', 'La section a bien été supprimée.');
+    }
 }
