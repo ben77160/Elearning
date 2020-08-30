@@ -7,24 +7,28 @@
         <div class="d-flex justify-content-center">
             <div class="col-lg-10 pl-5 ml-5">
                 <h3 class="text-center mb-5">Programme</h3>
-                <form id="form" action="#" method="POST" enctype="multipart/form-data">
-                    @csrf 
+                <form id="form" action="{{ route('instructor.curriculum.update', [
+    'id' => $course->id,
+    'section' => $section->id
+]) }}" method="POST" enctype="multipart/form-data">
+                    @csrf
+                    @method("PUT")
                     <div id="form-element" class="form-group">
                         <div class="jumbotron py-3">
                             <h4 class="my-3">Contenu de la section :</h4>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                    <input class="form-control" type="text" id="section_name" name="section_name"/>
+                                    <input class="form-control" type="text" id="section_name" name="section_name" value="{{ $section->name }}"/>
                                     </div>
                                     <div class="form-group">
                                     <input class="form-control" type="file" id="section_video" name="section_video"/>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <iframe width="320" height="180"
-                                        src="https://www.youtube.com/embed/tgbNymZ7vqY">
-                                    </iframe>
+                                    <video width="300" height="180" controls>
+                                        <source src="{{ asset("storage/courses_sections/$course->user_id/$section->video") }}" type="video/mp4">
+                                    </video>
                                     <p class="text-center mr-3">Vidéo actuelle</p>
                                 </div>
                             </div>

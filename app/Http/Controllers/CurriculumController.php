@@ -61,4 +61,36 @@ class CurriculumController extends Controller
         $section->save();
         return redirect()->route('instructor.curriculum.index', $course->id);
     }
+
+    public function edit($id, $sectionId)
+    {
+        $course = Course::find($id);
+        $section = Section::find($sectionId);
+        return view('instructor.curriculum.edit', [
+            'course' => $course,
+            'section' => $section
+        ]);
+    }
+
+    public function update(Request $request, $id, $sectionId)
+    {
+        $slugify = new Slugify();
+        $course = Course::find($id);
+        $section = Section::find($sectionId);
+
+        if($request->input('section_name')){
+            //update section name
+            $section->name = $request->input('section_name');
+            $section->slug  = $slugify->slugify($section->name);
+        }
+        if($request->file('section_video')){
+            //update section video
+            $video = $this->videoManager->videoStorage($request->file('section_video'));
+            $section->video = $video;
+            $section->playtime_seconds = $this->videoManager->getVideoDuration($video);
+        }
+        $section->save();
+        return redirect()->route('instructor.curriculum.index', $course->id)->with('success', 'La section a bien été modifiée');
+    }
+
 }
