@@ -7,7 +7,7 @@
             </a>
         </li>
         <li>
-            <a href="#">
+            <a href="{{ route('courses.index') }}">
                 <i class="fas fa-ellipsis-v"></i>
                 Suivre un cours
             </a>
@@ -22,7 +22,7 @@
         <li>
         </li>
         <li>
-            <a href="#">
+            <a href="{{ route('instructor.index') }}">
                 <i class="fas fa-chalkboard-teacher"></i>
                 Formateur
             </a>

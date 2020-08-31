@@ -118,7 +118,7 @@ class InstructorController extends Controller
         $course->delete();
         return redirect()->route('instructor.index')->with('success', 'Le cours a bien été supprimé !');
     }
-    
+
     //On publie notre cours en ligne
     public function publish($id)
     {

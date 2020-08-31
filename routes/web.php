@@ -29,6 +29,11 @@ Route::get('/logout', function (){
 Route::get('/home', 'HomeController@index')->name('home');
 
 /**
+ * Courses
+ */
+Route::get('/courses', 'CoursesController@courses')->name('courses.index');
+
+/**
  * Vue formateur
  */
 Route::get('/instructor/overview', 'InstructorController@index')->name('instructor.index');
