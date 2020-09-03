@@ -32,6 +32,7 @@ Route::get('/home', 'HomeController@index')->name('home');
  * Courses
  */
 Route::get('/courses', 'CoursesController@courses')->name('courses.index');
+Route::get('/courses/{slug}', 'CoursesController@course')->name('courses.show');
 
 /**
  * Vue formateur

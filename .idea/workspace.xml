@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="c2bb35cd-d3df-4426-9ea3-a9ddbd59b8e8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CoursesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CoursesController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/InstructorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/InstructorController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/courses/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/courses/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/incs/auth/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/incs/auth/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/courses/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/courses/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/instructor/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/instructor/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -168,7 +170,8 @@
       <workItem from="1598449640456" duration="13476000" />
       <workItem from="1598521469714" duration="4056000" />
       <workItem from="1598634490647" duration="98000" />
-      <workItem from="1598798224658" duration="12812000" />
+      <workItem from="1598798224658" duration="17212000" />
+      <workItem from="1599040332277" duration="5571000" />
     </task>
     <servers />
   </component>
@@ -192,10 +195,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="856" y="212" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1598455506916" />
-    <state x="798" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1598634490656">
+    <state x="798" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1599040337182">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="798" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1598634490656" />
+    <state x="798" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1599040337182" />
+    <state x="789" y="191" key="run.anything.popup" timestamp="1598892577627">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="789" y="191" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1598892577627" />
     <state x="784" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1598461921288">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
