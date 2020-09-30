@@ -23,8 +23,11 @@ class CartController extends Controller
            'quantity' => 1,
            'associatedModel' => $course
        ]);
-       return redirect()->route('cart.index',[
+       return redirect()->route('cart.index');
+    }
 
-       ]);
+    public function destroy($id){
+        \Cart::session(Auth::user()->id)->remove($id);
+        return redirect()->route('cart.index')->with('success', 'Cours supprimé de votre panier.');
     }
 }
