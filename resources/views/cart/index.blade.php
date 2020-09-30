@@ -8,6 +8,11 @@
     <p>{{ count(\Cart::session(Auth::user()->id)->getContent()) }} cours dans le panier</p>
     <div class="jumbotron">
         @if(count(\Cart::session(Auth::user()->id)->getContent()) > 0 )
+        <div class="d-flex justify-content-center mb-5 w-25">
+            <a class="btn btn-block btn-light" href="{{ route('cart.clear') }}">
+                Vider le panier
+            </a>
+        </div>
         <div class="row">
             <div class="col-12">
                 <div class="table-responsive">
