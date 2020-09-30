@@ -49,7 +49,7 @@
                                         <div class="pi-price mt-5">
                                             <h2><span>€</span>{{ $course->price }}</h2>
                                         </div>
-                                        <a href="#" class="price-btn">M'inscrire <i class="fas fa-arrow-right"></i></a>
+                                        <a href="{{ route('cart.store', $course->id) }}" class="price-btn">M'inscrire <i class="fas fa-arrow-right"></i></a>
                                     </div>
                             </div>
                         </div>

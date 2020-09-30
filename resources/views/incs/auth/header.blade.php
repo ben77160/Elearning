@@ -47,7 +47,7 @@
             </ul>
         </li>
         <li>
-            <a href="#">
+            <a href="{{ route('cart.index') }}">
                 <i class="fas fa-shopping-cart"></i>
                 <span class="badge badge-pill badge-danger">1</span>
             </a>
